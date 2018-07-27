@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MikeTube Search</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>MikeTube <span>Search</span></h1>
+                 <p>Search all YouTube videos</p>
+            </div><!-- container-->
+        </header>
+        <div class="container">
+            <section>
+                <form id="search-form" name="search-form" onsubmit="return search()">
+                    <div class="fieldcontainer">
+                        <input type="search" id="query" class="search-field" placeholder="Search YouTube...">
+                        <input type="submit" name="search-btn" value="">
+                    </div><!-- field container-->
+                </form>
+
+                <ul id="results"></ul>
+                <div id="buttons"></div><!-- buttons -->
+            </section>
+        </div><!--container-->
+        <footer>
+            <div class="container">
+                <p>Copyright &copy; 2018 Michael Legemah</p>
+            </div><!--container-->  
+        </footer>
+    </body>
+</html>
