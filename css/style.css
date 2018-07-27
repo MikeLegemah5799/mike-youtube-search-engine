@@ -29,6 +29,9 @@ a {
 header {
     padding: 30px 20px;
     background: #200589;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
 }
 
 header h1 {
@@ -65,13 +68,11 @@ footer {
     margin: 0 auto;
 }
 
-#search-btn:hover {
-    filter: alpha (opacity=90);
-    opacity: 0.9;
-}
 
 .search-field {
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     display: block;
     width: 45%;
     padding: 12px 8px;
@@ -80,4 +81,23 @@ footer {
     font-size: 1.6em;
     border: none;
     border-bottom: 3px solid #ab20fd;
+}
+
+#search-btn {
+    position: absolute;
+    background: transparent url('../img/search.png') top left no-repeat;
+    right: 360px;
+    top: 5px;
+    height: 32px;
+    width: 32px;
+    border: 0;
+    cursor: pointer;
+    zoom: 1;
+    opacity: .65;
+    filter: alpha (opacity=65);
+}
+
+#search-btn:hover {
+    filter: alpha (opacity=90);
+    opacity: 0.9;
 }
