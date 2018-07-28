@@ -123,7 +123,7 @@ footer {
     border: 1px solid #7d12ff;
 }
 
-h3 {
+h3 a {
     color: #200589;
 }
 
@@ -134,4 +134,20 @@ h3 {
 
 .cTitle {
     color: #000;
+}
+
+.button-container {
+    margin-top: 25px;
+}
+
+.paging-button {
+    background: #200589;
+    border: 0;
+    padding: 10px 20px;
+    color: #fff;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    margin: 10px;
+    cursor: pointer;
 }
